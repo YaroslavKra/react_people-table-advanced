@@ -91,7 +91,7 @@ export const PeoplePage = () => {
                 </div>
               )}
 
-              {hasPeopleToShow && (<PeopleTable people={filteredPeople} />)}
+              {hasPeopleToShow && <PeopleTable people={filteredPeople} />}
             </div>
           </div>
         </div>
