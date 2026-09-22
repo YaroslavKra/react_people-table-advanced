@@ -10,11 +10,12 @@ export const PeopleFilters = () => {
 
   const toggleCentury = (century: string) => {
     const newParams = new URLSearchParams(searchParams);
+    const currentCenturies = newParams.getAll('centuries');
 
     if (centuries.includes(century)) {
       newParams.delete('centuries');
 
-      centuries
+      currentCenturies
         .filter(item => item !== century)
         .forEach(item => newParams.append('centuries', item));
     } else {
