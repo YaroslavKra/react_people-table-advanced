@@ -12,7 +12,7 @@ export const PeopleFilters = () => {
     const newParams = new URLSearchParams(searchParams);
     const currentCenturies = newParams.getAll('centuries');
 
-    if (centuries.includes(century)) {
+    if (currentCenturies.includes(century)) {
       newParams.delete('centuries');
 
       currentCenturies
